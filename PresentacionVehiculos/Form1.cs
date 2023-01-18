@@ -22,6 +22,7 @@ namespace PresentacionVehiculos
         {
             Camion camion = new Camion(5000, 8, 2, 2);
             AutoElectrico autoElectrico = new AutoElectrico("Tesla", "BatteryG400", 2, 4);
+            Remolque remolque = new Remolque("Grande", "Remolque de mercancia");
 
             MessageBox.Show("Camion: " + camion.Imprimir());
             MessageBox.Show("Auto Electrico: " + autoElectrico.Imprimir());

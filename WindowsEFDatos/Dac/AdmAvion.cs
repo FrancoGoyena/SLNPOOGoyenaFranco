@@ -25,7 +25,7 @@ namespace WindowsEFDatos.Dac
 
         public static int Editar(Avion avion)
         {
-            Avion avionOrigen=context.Aviones.Find(avion);
+            Avion avionOrigen=context.Aviones.Find(avion.IdAvion);
             avionOrigen.Capacidad=avion.Capacidad;
             avionOrigen.Denominacion = avion.Denominacion;
             return context.SaveChanges();
